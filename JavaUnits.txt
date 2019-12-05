@@ -1,0 +1,100 @@
+#unit1
+public void test1(int a, int b, int c){
+  if(a<b){
+    if(a<c)
+      System.out.println(a);
+    else
+      System.out.println(b);
+  }else{
+    if(b<c)
+      System.out.println(b);
+    else
+      System.out.println(c);
+  }
+}  
+
+#unit2
+public void test2(int i, int a){
+  i = 1;
+  while(i<=30){
+    if(a>0){
+      System.out.println(a);
+      a = entrada.nextInt();
+    }
+    i = i+1;
+  }
+}  
+
+#unit3
+public void test3(int i, int contaP, 
+                  int contaO, int a){  
+  contaP = 0;
+  contaO = 0;
+  i = 1;
+  while(i<=30){
+    if(a>0)
+      contaP = contaP+1;
+    else
+      contaO = contaO+1;
+    i = i+1;
+  }
+  System.out.println(contaP);
+  System.out.println(contaO);
+}
+
+#unit4
+public int test4(int temp){  
+  if((temp>=0) && (temp<=79)){
+    switch(temp/20){
+      case 0:
+        return(1);
+      case 1:
+        return(2);
+      case 2:
+        return(3);
+      case 3:
+        return(4);
+      default:
+        assert(false);
+        return(0);
+    }
+  }
+  return(-1);
+}  
+
+#unit5
+public void test5(int y, int x, boolean resp){
+  while(resp==true){
+    for(x=0; x<10; x++){
+      System.out.println();
+    }
+    if(y==0){
+      y++;
+    }else{  
+      resp = false;
+    }
+  }
+}  
+
+#unit6
+void test6(int m, int n){
+  int q, r;
+  r = m;
+  q = 0;
+  while (r >= n){
+    r = r-n;
+    q = q+1;
+  }    
+  System.out.println(q, r);
+}
+
+#unit7
+void test7(){
+  int x, y
+  if(x>y){
+    x = x+y;
+    y = x-y;
+    x = x-y;
+    if(x-y > 0)
+      assert(false);
+}
