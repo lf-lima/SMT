@@ -1,4 +1,4 @@
-#unit1
+#test1
 public void test1(int a, int b, int c){
   if(a<b){
     if(a<c)
@@ -13,7 +13,7 @@ public void test1(int a, int b, int c){
   }
 }  
 
-#unit2
+#test2
 public void test2(int i, int a){
   i = 1;
   while(i<=30){
@@ -25,7 +25,7 @@ public void test2(int i, int a){
   }
 }  
 
-#unit3
+#test3
 public void test3(int i, int contaP, 
                   int contaO, int a){  
   contaP = 0;
@@ -42,7 +42,7 @@ public void test3(int i, int contaP,
   System.out.println(contaO);
 }
 
-#unit4
+#test4
 public int test4(int temp){  
   if((temp>=0) && (temp<=79)){
     switch(temp/20){
@@ -62,7 +62,7 @@ public int test4(int temp){
   return(-1);
 }  
 
-#unit5
+#test5
 public void test5(int y, int x, boolean resp){
   while(resp==true){
     for(x=0; x<10; x++){
@@ -76,7 +76,7 @@ public void test5(int y, int x, boolean resp){
   }
 }  
 
-#unit6
+#test6
 void test6(int m, int n){
   int q, r;
   r = m;
@@ -88,7 +88,7 @@ void test6(int m, int n){
   System.out.println(q, r);
 }
 
-#unit7
+#test7
 void test7(){
   int x, y
   if(x>y){
